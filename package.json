@@ -25,13 +25,13 @@
     "start": "node bin/cite-server"
   },
   "dependencies": {
-    "body-parser": "^1.20.3",
+    "body-parser": "^2.2.0",
     "errorhandler": "^1.5.1",
     "express": "^5.1.0",
-    "method-override": "^2.3.5",
+    "method-override": "^3.0.0",
     "minimist": "^1.2.8",
     "nomar": "^1.1.0",
-    "parse5": "^2.1.5",
+    "parse5": "^8.0.0",
     "walverine": "^0.0.7",
     "xmldom": "^0.1.22"
   },
