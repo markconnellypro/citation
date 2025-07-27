@@ -36,12 +36,12 @@
     "xmldom": "^0.6.0"
   },
   "devDependencies": {
-    "deep-equal": "^1.0.1",
-    "gulp": "^4.0.2",
-    "gulp-browserify": "^0.5.0",
-    "gulp-gzip": "^1.2.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.5.2",
+    "deep-equal": "^2.2.3",
+    "gulp": "^5.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-gzip": "^1.4.2",
+    "gulp-rename": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
     "nodeunit": "^0.11.3"
   },
   "engines": {
