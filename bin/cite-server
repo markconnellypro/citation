@@ -13,9 +13,9 @@ var Citation = require('../citation');
 var heartbeat = function(req, res) {res.send("I'm alive!");}
 
 var route = function(req, res) {
-  var text = req.param("text");
-  var options = req.param("options");
-  var pretty = req.param("pretty");
+  var text = req.params.text;
+  var options = req.params.options;
+  var pretty = req.params.pretty;
 
   if (text) {
     text = decodeURIComponent(text);
@@ -45,7 +45,7 @@ var route = function(req, res) {
     res.set({'Content-Type': 'application/json'});
     res.send(json);
   } else {
-    res.send("Include a block of text to scan for citations in the 'text' parameter.", 500);
+    res.status(500).send("Include a block of text to scan for citations in the 'text' parameter.");
   }
 };
 
@@ -78,6 +78,9 @@ app.route('/citation/find').get(route).post(route);
 
 
 // boot it up!
-app.listen(port, function() {
+app.listen(port, (error) => {
+  if (error) {
+    console.log(error)
+  }
   console.log("Express server listening on port %s in %s mode", port, env);
 });
