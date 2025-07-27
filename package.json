@@ -25,11 +25,11 @@
     "start": "node bin/cite-server"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "errorhandler": "^1.4.3",
-    "express": "^4.17.1",
-    "method-override": "^2.3.10",
-    "minimist": "^1.2.0",
+    "body-parser": "^1.20.3",
+    "errorhandler": "^1.5.1",
+    "express": "^4.21.2",
+    "method-override": "^2.3.5",
+    "minimist": "^1.2.8",
     "nomar": "^1.1.0",
     "parse5": "^2.1.5",
     "walverine": "^0.0.7",
